@@ -1,0 +1,143 @@
+[debug] [2026-02-25T06:20:28.247Z] ----------------------------------------------------------------------
+[debug] [2026-02-25T06:20:28.249Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aroua\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-02-25T06:20:28.249Z] CLI Version:   15.5.1
+[debug] [2026-02-25T06:20:28.249Z] Platform:      win32
+[debug] [2026-02-25T06:20:28.249Z] Node Version:  v25.2.1
+[debug] [2026-02-25T06:20:28.250Z] Time:          Wed Feb 25 2026 14:20:28 GMT+0800 (Singapore Standard Time)
+[debug] [2026-02-25T06:20:28.250Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Aroua\Downloads\iot-smart-greenhouse-main\iot-smart-greenhouse-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-25T06:20:48.777Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-25T06:20:48.777Z] > authorizing via signed-in user (arouatalhi@gmail.com)
+[debug] [2026-02-25T06:20:48.778Z] Checked if tokens are valid: false, expires at: 1772001291439
+[debug] [2026-02-25T06:20:48.779Z] Checked if tokens are valid: false, expires at: 1772001291439
+[debug] [2026-02-25T06:20:48.779Z] > refreshing access token with scopes: []
+[debug] [2026-02-25T06:20:48.781Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-25T06:20:48.781Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-25T06:20:48.953Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-25T06:20:48.954Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-25T06:20:48.963Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-02-25T06:20:49.529Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-02-25T06:20:49.529Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-02-25T06:20:55.002Z] Checked if tokens are valid: true, expires at: 1772004047954
+[debug] [2026-02-25T06:20:55.003Z] Checked if tokens are valid: true, expires at: 1772004047954
+[debug] [2026-02-25T06:20:55.003Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 [none]
+[debug] [2026-02-25T06:20:56.280Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 200
+[debug] [2026-02-25T06:20:56.280Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 {"projectId":"studio-4948649727-6e3c2","projectNumber":"198246796544","displayName":"SmartGreenHouse","name":"projects/studio-4948649727-6e3c2","resources":{"hostingSite":"studio-4948649727-6e3c2"},"state":"ACTIVE","etag":"1_0707c59a-acbd-4897-b878-036846df0d0a"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Aroua\Downloads\iot-smart-greenhouse-main\iot-smart-greenhouse-main 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=986135311&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-02-25T06:21:40.816Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2026-02-25T06:21:40.816Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2026-02-25T06:21:41.823Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2026-02-25T06:21:41.824Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2026-02-25T06:21:41.842Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2026-02-25T06:21:42.236Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2026-02-25T06:21:42.236Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"arouatlh","id":155142520,"node_id":"U_kgDOCT9JeA","avatar_url":"https://avatars.githubusercontent.com/u/155142520?v=4","gravatar_id":"","url":"https://api.github.com/users/arouatlh","html_url":"https://github.com/arouatlh","followers_url":"https://api.github.com/users/arouatlh/followers","following_url":"https://api.github.com/users/arouatlh/following{/other_user}","gists_url":"https://api.github.com/users/arouatlh/gists{/gist_id}","starred_url":"https://api.github.com/users/arouatlh/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/arouatlh/subscriptions","organizations_url":"https://api.github.com/users/arouatlh/orgs","repos_url":"https://api.github.com/users/arouatlh/repos","events_url":"https://api.github.com/users/arouatlh/events{/privacy}","received_events_url":"https://api.github.com/users/arouatlh/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"Aroua Talhi","company":null,"blog":"","location":"Kuala Lampur","email":null,"hireable":null,"bio":"Let's learn together! Dream Big!","twitter_username":null,"notification_email":null,"public_repos":12,"public_gists":0,"followers":0,"following":1,"created_at":"2023-12-29T08:00:31Z","updated_at":"2025-12-04T06:54:54Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":22219,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as arouatlh 
+[info] 
+[debug] [2026-02-25T06:22:49.483Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Aroua\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:508:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1327:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:520:35)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-25T06:22:50.980Z] ----------------------------------------------------------------------
+[debug] [2026-02-25T06:22:50.983Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aroua\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-02-25T06:22:50.984Z] CLI Version:   15.5.1
+[debug] [2026-02-25T06:22:50.984Z] Platform:      win32
+[debug] [2026-02-25T06:22:50.984Z] Node Version:  v25.2.1
+[debug] [2026-02-25T06:22:50.984Z] Time:          Wed Feb 25 2026 14:22:50 GMT+0800 (Singapore Standard Time)
+[debug] [2026-02-25T06:22:50.984Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: Not in a Firebase app directory (could not locate firebase.json)
+[debug] [2026-02-25T06:24:07.987Z] ----------------------------------------------------------------------
+[debug] [2026-02-25T06:24:07.990Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aroua\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-02-25T06:24:07.991Z] CLI Version:   15.5.1
+[debug] [2026-02-25T06:24:07.991Z] Platform:      win32
+[debug] [2026-02-25T06:24:07.991Z] Node Version:  v25.2.1
+[debug] [2026-02-25T06:24:07.991Z] Time:          Wed Feb 25 2026 14:24:07 GMT+0800 (Singapore Standard Time)
+[debug] [2026-02-25T06:24:07.991Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Aroua\Downloads\iot-smart-greenhouse-main\iot-smart-greenhouse-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-25T06:24:31.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-25T06:24:31.594Z] > authorizing via signed-in user (arouatalhi@gmail.com)
+[debug] [2026-02-25T06:24:31.595Z] Checked if tokens are valid: true, expires at: 1772004047954
+[debug] [2026-02-25T06:24:31.596Z] Checked if tokens are valid: true, expires at: 1772004047954
+[debug] [2026-02-25T06:24:31.598Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 [none]
+[debug] [2026-02-25T06:24:31.995Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 200
+[debug] [2026-02-25T06:24:31.995Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 {"projectId":"studio-4948649727-6e3c2","projectNumber":"198246796544","displayName":"SmartGreenHouse","name":"projects/studio-4948649727-6e3c2","resources":{"hostingSite":"studio-4948649727-6e3c2"},"state":"ACTIVE","etag":"1_0707c59a-acbd-4897-b878-036846df0d0a"}
+[info] i  Using project studio-4948649727-6e3c2 (SmartGreenHouse) . 
+[info] 
+=== Hosting Setup
+[debug] [2026-02-25T06:24:32.024Z] Checked if tokens are valid: true, expires at: 1772004047954
+[debug] [2026-02-25T06:24:32.025Z] Checked if tokens are valid: true, expires at: 1772004047954
+[debug] [2026-02-25T06:24:32.025Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 [none]
+[debug] [2026-02-25T06:24:32.487Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 200
+[debug] [2026-02-25T06:24:32.487Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-4948649727-6e3c2 {"projectId":"studio-4948649727-6e3c2","projectNumber":"198246796544","displayName":"SmartGreenHouse","name":"projects/studio-4948649727-6e3c2","resources":{"hostingSite":"studio-4948649727-6e3c2"},"state":"ACTIVE","etag":"1_0707c59a-acbd-4897-b878-036846df0d0a"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Aroua\Downloads\iot-smart-greenhouse-main\iot-smart-greenhouse-main 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=770253208&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
