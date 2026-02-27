@@ -1,0 +1,154 @@
+/* GENERAL RESET */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* BACKGROUND */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('/Assets/greenhousebackground.png') center / cover no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+}
+
+menu {
+  background: var(--menu-bg);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px
+    rgba(0, 0, 0, 0.12);
+    display: flex;
+    gap: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* LOGIN LOGO*/
+.login-logo {
+  width: 64px;
+  height: 64px;
+  background: #17b978;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 10px;
+}
+
+.brand h1 {
+  color:#17b978;
+  margin: 7px 0;
+}
+
+.brand h3 {
+  color: #0c0c0d;
+  font-size: 14px;
+}
+
+/* CARDS STYLES*/
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),    
+    0 10px 20px rgba(0, 0, 0, 0.1), 
+    0 20px 50px rgba(0, 0, 0, 0.05); 
+  border-bottom: 2px solid rgba(75, 75, 75, 0.2);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #17b978;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #17b978;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #129e65;
+}
+
+.error {
+  display: none;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main {
+        margin-left: 0;
+        padding: 120px 16px 16px;
+    }
+    .header {
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
